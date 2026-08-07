@@ -1,4 +1,4 @@
-// Auto-extracted from App.jsx
+// Auto-extracted from App.jsx. Section severities are VRT-anchored (see severity proposal).
 export const DEFAULT_CATEGORIES = [
   {
     "id": "web",
@@ -10,7 +10,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "pa06bxnd",
         "name": "Subdomain Enumeration",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "kltav5zl",
@@ -268,7 +268,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "si1dijfc",
         "name": "Port Scanning & Service Enumeration",
-        "severity": "Medium",
+        "severity": "Info",
         "checks": [
           {
             "id": "pu1r0pko",
@@ -526,7 +526,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "qnlryujs",
         "name": "Technology Fingerprinting",
-        "severity": "Medium",
+        "severity": "Info",
         "checks": [
           {
             "id": "xk7q7ilp",
@@ -734,7 +734,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "l0cps2p7",
         "name": "Content & URL Discovery",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "yytnr2to",
@@ -992,7 +992,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "q92ykfax",
         "name": "Link & Parameter Discovery",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "ymzb24pf",
@@ -1200,7 +1200,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "d0mhgpfo",
         "name": "Password & Credential Attacks",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "f4pzmlxi",
@@ -1408,7 +1408,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "h3wub4aw",
         "name": "Session Management",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "8ly45ttp",
@@ -1616,7 +1616,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "ovlf9w5h",
         "name": "OAuth & SSO Testing",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "0ecxc7nc",
@@ -1774,7 +1774,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "krv726cq",
         "name": "Login & Registration Bypass",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "cb26ozod",
@@ -1932,7 +1932,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "ve2kridu",
         "name": "IDOR (Insecure Direct Object Reference)",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "29x026kp",
@@ -2065,7 +2065,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "iph6lhy7",
         "name": "Privilege Escalation",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "ky4tjs6o",
@@ -2198,7 +2198,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "asnojv0y",
         "name": "Path Traversal & File Access",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "cu3ntu0c",
@@ -2331,7 +2331,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "tdhi9jdw",
         "name": "SQL Injection",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "v3678at1",
@@ -2489,7 +2489,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "vjw7sfux",
         "name": "Cross-Site Scripting (XSS)",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "cr8ml8gc",
@@ -2697,7 +2697,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "epcm7vma",
         "name": "Server-Side Request Forgery (SSRF)",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "bh55ruz9",
@@ -2855,7 +2855,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "kse53re8",
         "name": "Server-Side Template Injection (SSTI)",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "pasvmwsz",
@@ -2988,7 +2988,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "z5vffvix",
         "name": "OS Command Injection",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "5j6lawr0",
@@ -3121,7 +3121,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "tunltdyl",
         "name": "NoSQL Injection",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "bp7r8546",
@@ -3229,7 +3229,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "p5our17m",
         "name": "LDAP Injection",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "qte11nfa",
@@ -3287,7 +3287,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "3hwwv59v",
         "name": "XML Injection & XXE",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "u709f5pb",
@@ -3395,7 +3395,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "vibd421o",
         "name": "Business Logic Vulnerabilities",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "fm8i3dpm",
@@ -3503,7 +3503,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "5063aqwo",
         "name": "Race Conditions",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "zl0jhcfm",
@@ -3694,7 +3694,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "havxxhy5",
         "name": "CORS Misconfiguration",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "f5c6mc6a",
@@ -3777,7 +3777,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "4mqsk6zv",
         "name": "Clickjacking",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "f8c9wfrk",
@@ -3893,7 +3893,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "bmw6iep4",
         "name": "File Upload Vulnerabilities",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "uhbihiix",
@@ -4001,7 +4001,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "iq1kok2d",
         "name": "File Download & Access",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "5tunxkxk",
@@ -4059,7 +4059,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "g0nhn6rs",
         "name": "TLS/SSL Configuration",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "g6zkz9bb",
@@ -4250,7 +4250,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "n7lyg01r",
         "name": "HTTP Request Smuggling",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "ad0p668r",
@@ -4308,7 +4308,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "i6wpoqal",
         "name": "Web Cache Poisoning & Deception",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "4cw8ajdp",
@@ -4474,7 +4474,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "4d7bw1q6",
         "name": "Cloud & Container Security",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "gtvl0si6",
@@ -4557,7 +4557,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "lzytq2ty",
         "name": "Data Exposure",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "l4m97g8c",
@@ -4665,7 +4665,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "xucfx3zd",
         "name": "Error Handling",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "zr47v288",
@@ -4873,7 +4873,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "z8xhup2v",
         "name": "Google Dorking & OSINT",
-        "severity": "Medium",
+        "severity": "Info",
         "checks": [
           {
             "id": "fpz5yxht",
@@ -5517,7 +5517,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "y3g5c6l6",
         "name": "DNS Security Testing",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "pg55pak3",
@@ -5625,7 +5625,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "1972jtgh",
         "name": "WAF Bypass Techniques",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "7xoz6sa3",
@@ -5758,7 +5758,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "neef1o7h",
         "name": "Prototype Pollution",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "63r8250g",
@@ -5924,7 +5924,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "h9e6r09j",
         "name": "Open Redirect",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "k9di2zca",
@@ -6007,7 +6007,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "9c87lzh2",
         "name": "Deserialization Attacks",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "c71damgj",
@@ -6115,7 +6115,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "2u7p4ndf",
         "name": "JWT Security Deep Testing",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "uzkygoql",
@@ -6223,7 +6223,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "9ahrgjtj",
         "name": "Server-Side Include (SSI) Injection",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "4tcxwzgs",
@@ -7138,7 +7138,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "h3p0snf2",
         "name": "CSP Testing",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "0bye2hxt",
@@ -7395,7 +7395,7 @@ export const DEFAULT_CATEGORIES = [
       },
       {
         "id": "stq5bbnu",
-        "name": "Cookie Security Deep",
+        "name": "Cookie Security Basic",
         "severity": "Medium",
         "checks": [
           {
@@ -7654,7 +7654,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "z3vyomzn",
         "name": "Auth Bypass Techniques",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "soa7kokf",
@@ -7912,7 +7912,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "x0jpb74w",
         "name": "Subdomain Takeover",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "oh85yabd",
@@ -8170,7 +8170,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "d8gwf5bg",
         "name": "Cloud SSRF Deep",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "ytjw5syr",
@@ -8428,7 +8428,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "9yw4vn8i",
         "name": "Account Takeover",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "k5ez9gnc",
@@ -8686,7 +8686,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "q6pmoz6o",
         "name": "Security Headers",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "crttovxe",
@@ -9718,7 +9718,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "7qocj2em",
         "name": "Spring Boot Security",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "9xyoxxo6",
@@ -10234,7 +10234,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "fgqhld8t",
         "name": "HTTP Header Security Deep",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "vzchwk5d",
@@ -10747,7 +10747,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "9x5cnqlj",
         "name": "Login Page Security Deep",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "azzbvh2w",
@@ -11733,7 +11733,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "3c2vqzyy",
         "name": "Profile & Account Security",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "pk2qwkhg",
@@ -12221,7 +12221,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "l7uch934",
         "name": "Search Function Security",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "ux8dd3i9",
@@ -12704,7 +12704,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "le6o4gx0",
         "name": "Payment & Checkout Security",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "p8vinlzo",
@@ -13192,7 +13192,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "fpojqi98",
         "name": "File Handler Security Deep",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "e9e0wvzw",
@@ -14153,7 +14153,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "jkxw0l3b",
         "name": "Export & Report Security",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "sl1fb58w",
@@ -14631,7 +14631,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "cf6z10bm",
         "name": "Admin Panel Security Deep",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "rixwz9kl",
@@ -15382,7 +15382,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "corasmyr",
         "name": "Authentication Bypass Deep",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "04obrx0n",
@@ -16661,7 +16661,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "pvkrfey3",
         "name": "Subdomain Takeover Deep",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "ac78eq7b",
@@ -17148,7 +17148,7 @@ export const DEFAULT_CATEGORIES = [
       },
       {
         "id": "udul8lrq",
-        "name": "Cookie Security Deep",
+        "name": "Cookie Security Advanced",
         "severity": "Medium",
         "checks": [
           {
@@ -17637,7 +17637,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "2qy909zn",
         "name": "Account Takeover Techniques",
-        "severity": "Medium",
+        "severity": "Critical",
         "checks": [
           {
             "id": "akl42dow",
@@ -18613,7 +18613,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "abxsmmyb",
         "name": "Cloud Security Deep",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "6uoh5qdk",
@@ -19096,7 +19096,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "vt4iz1bz",
         "name": "CORS Bypass Techniques Deep",
-        "severity": "Medium",
+        "severity": "High",
         "checks": [
           {
             "id": "a160ccft",
@@ -20032,7 +20032,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "zabtxmt4",
         "name": "Rate Limit Bypass Deep",
-        "severity": "Medium",
+        "severity": "Low",
         "checks": [
           {
             "id": "0komn8vd",
@@ -20510,7 +20510,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "mjqy8em5",
         "name": "Microservices & API Gateway",
-        "severity": "Medium",
+        "severity": "High",
         "group": "⚙️ Config & Deploy Management",
         "checks": [
           {
@@ -20593,7 +20593,7 @@ export const DEFAULT_CATEGORIES = [
       {
         "id": "edmtngef",
         "name": "GraphQL Deep Testing",
-        "severity": "Medium",
+        "severity": "High",
         "group": "💉 Input Validation",
         "checks": [
           {

@@ -7,7 +7,7 @@ const GLOBAL_VERSION_KEY = "bbcl_categories_version";
 // Bump this whenever the shipped default checklist changes (categories added/removed).
 // On launch, if the saved checklist has an older version, it is reseeded from the
 // new defaults. Per-project progress (keyed by check id) is preserved.
-export const CATEGORIES_VERSION = 3;
+export const CATEGORIES_VERSION = 4;
 
 export function loadCategoriesVersion() {
   try { return Number(localStorage.getItem(GLOBAL_VERSION_KEY)) || 0; } catch { return 0; }
