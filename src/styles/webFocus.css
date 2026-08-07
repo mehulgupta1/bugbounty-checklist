@@ -1,0 +1,97 @@
+/* Web Focus view — scoped under .web-focus, blended with the app's theme vars.
+   Teal accent is UI chrome only, kept distinct from the severity/status palette. */
+.web-focus{ --wf-accent:#0d9488; --wf-accent-soft:rgba(13,148,136,.12); }
+:root[data-theme="dark"] .web-focus{ --wf-accent:#2dd4bf; --wf-accent-soft:rgba(45,212,191,.14); }
+
+.web-focus{ padding:4px 4px 40px; }
+.web-focus .wf-mono{ font-family:var(--font-mono, ui-monospace, Menlo, Consolas, monospace); }
+.web-focus .wf-tnum{ font-variant-numeric:tabular-nums; }
+
+/* segmented coverage strip */
+.web-focus .wf-seg{ display:flex; height:6px; border-radius:6px; overflow:hidden;
+  background:var(--color-border-light); gap:0; }
+.web-focus .wf-seg.wf-lg{ height:10px; border-radius:8px; }
+.web-focus .wf-seg > span{ display:block; height:100%; }
+
+/* overall coverage summary */
+.web-focus .wf-overview{ display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+  background:var(--color-bg-secondary); border:1px solid var(--color-border);
+  border-radius:12px; padding:12px 16px; margin-bottom:14px; }
+.web-focus .wf-ov-num{ font-size:13px; color:var(--color-text-muted); white-space:nowrap; }
+.web-focus .wf-ov-num b{ font-size:20px; color:var(--color-text-heading); font-weight:750; }
+.web-focus .wf-ov-bar{ flex:1; min-width:180px; }
+.web-focus .wf-key{ display:flex; gap:12px; flex-wrap:wrap;
+  font-family:var(--font-mono, monospace); font-size:10.5px; color:var(--color-text-muted); }
+.web-focus .wf-key span{ display:flex; align-items:center; gap:5px; }
+.web-focus .wf-dot{ width:7px; height:7px; border-radius:50%; display:inline-block; }
+
+/* focus bar */
+.web-focus .wf-focusbar{ margin-bottom:18px; }
+.web-focus .wf-fb-label{ font-family:var(--font-mono, monospace); font-size:10.5px;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--wf-accent);
+  margin-bottom:9px; }
+.web-focus .wf-chips{ display:flex; gap:8px; flex-wrap:wrap; }
+.web-focus .wf-surf{ cursor:pointer; border:1px solid var(--color-border); background:var(--color-bg-secondary);
+  border-radius:11px; padding:9px 12px; display:flex; flex-direction:column; gap:7px;
+  min-width:150px; text-align:left; transition:.15s; }
+.web-focus .wf-surf:hover{ border-color:var(--color-text-faint); transform:translateY(-1px); }
+.web-focus .wf-surf.wf-on{ border-color:var(--wf-accent); background:var(--wf-accent-soft);
+  box-shadow:0 0 0 1px var(--wf-accent); }
+.web-focus .wf-surf-head{ display:flex; align-items:center; gap:7px; }
+.web-focus .wf-surf-head .wf-ico{ font-size:14px; line-height:1; }
+.web-focus .wf-surf-head .wf-sl{ font-size:12.5px; font-weight:650; color:var(--color-text-heading); }
+.web-focus .wf-surf-cov{ display:flex; align-items:center; gap:7px; }
+.web-focus .wf-surf-cov .wf-seg{ flex:1; }
+.web-focus .wf-surf-pct{ font-family:var(--font-mono, monospace); font-size:10px; color:var(--color-text-muted); }
+.web-focus .wf-surf.wf-on .wf-surf-pct{ color:var(--wf-accent); }
+.web-focus .wf-surf-hint{ font-family:var(--font-mono, monospace); font-size:9px; color:var(--color-text-faint); }
+
+/* phase band */
+.web-focus .wf-band{ display:flex; align-items:center; gap:10px; margin:22px 0 12px; cursor:pointer; user-select:none; }
+.web-focus .wf-band:first-child{ margin-top:6px; }
+.web-focus .wf-caret{ color:var(--color-text-faint); font-size:11px; width:12px; transition:.2s; }
+.web-focus .wf-band.wf-collapsed .wf-caret{ transform:rotate(-90deg); }
+.web-focus .wf-band .wf-b-name{ font-size:14px; font-weight:700; color:var(--color-text-heading); }
+.web-focus .wf-band .wf-b-meta{ font-family:var(--font-mono, monospace); font-size:11px; color:var(--color-text-faint); }
+.web-focus .wf-band .wf-b-line{ flex:1; height:1px; background:var(--color-border); }
+
+/* cards */
+.web-focus .wf-cards{ display:grid; grid-template-columns:repeat(auto-fill,minmax(268px,1fr)); gap:12px; }
+.web-focus .wf-card{ background:var(--color-bg-secondary); border:1px solid var(--color-border);
+  border-radius:14px; padding:15px 16px; display:flex; flex-direction:column; gap:11px;
+  position:relative; overflow:hidden; cursor:pointer; transition:.15s; }
+.web-focus .wf-card:hover{ border-color:var(--color-text-faint); transform:translateY(-2px);
+  box-shadow:0 8px 22px rgba(0,0,0,.10); }
+.web-focus .wf-edge{ position:absolute; left:0; top:0; bottom:0; width:4px; }
+.web-focus .wf-card-top{ display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
+.web-focus .wf-ptag{ font-family:var(--font-mono, monospace); font-size:9px; color:var(--color-text-faint);
+  text-transform:uppercase; letter-spacing:.05em; margin-bottom:3px; }
+.web-focus .wf-card-name{ font-size:14.5px; font-weight:650; color:var(--color-text-heading); line-height:1.28; }
+.web-focus .wf-preview{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:5px; }
+.web-focus .wf-preview li{ font-size:12px; color:var(--color-text-muted); display:flex; gap:7px;
+  align-items:flex-start; line-height:1.4; }
+.web-focus .wf-preview li::before{ content:"›"; color:var(--wf-accent); }
+.web-focus .wf-card-foot{ display:flex; align-items:center; justify-content:space-between; margin-top:auto;
+  padding-top:3px; font-family:var(--font-mono, monospace); font-size:11px; }
+.web-focus .wf-sev{ font-size:9.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; }
+.web-focus .wf-pill{ font-family:var(--font-mono, monospace); font-size:10px; padding:1px 7px;
+  border-radius:20px; border:1px solid var(--color-border); }
+
+/* detail */
+.web-focus .wf-back{ display:inline-flex; align-items:center; gap:8px;
+  font-family:var(--font-mono, monospace); font-size:12px; color:var(--color-text-muted);
+  background:var(--color-bg-secondary); border:1px solid var(--color-border); border-radius:9px;
+  padding:8px 13px; cursor:pointer; margin-bottom:16px; }
+.web-focus .wf-back:hover{ border-color:var(--wf-accent); color:var(--wf-accent); }
+.web-focus .wf-detail-head{ display:flex; align-items:flex-start; gap:12px; margin-bottom:10px; }
+.web-focus .wf-detail-edge{ width:5px; border-radius:5px; align-self:stretch; min-height:44px; }
+.web-focus .wf-detail-head h2{ margin:0; font-size:22px; font-weight:730; letter-spacing:-.02em;
+  color:var(--color-text-heading); }
+.web-focus .wf-detail-meta{ display:flex; gap:16px; flex-wrap:wrap; align-items:center;
+  font-family:var(--font-mono, monospace); font-size:12px; color:var(--color-text-muted); margin-bottom:14px; }
+.web-focus .wf-empty{ color:var(--color-text-faint); font-family:var(--font-mono, monospace);
+  font-size:13px; text-align:center; padding:40px; }
+
+@media (prefers-reduced-motion:reduce){
+  .web-focus .wf-card, .web-focus .wf-surf{ transition:none; }
+}

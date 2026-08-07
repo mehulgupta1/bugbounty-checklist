@@ -23,6 +23,7 @@ import Sandbox from "./components/Sandbox";
 import TestFlowEngine from "./components/TestFlowEngine";
 import ReconDiffEngine from "./components/ReconDiffEngine";
 import ReconUrlParser from "./components/ReconUrlParser";
+import WebFocusView from "./components/WebFocusView";
 
 import ExportModal from "./components/ExportModal";
 import ImportExportModal from "./components/ImportExportModal";
@@ -230,6 +231,38 @@ export default function BugBountyChecklist() {
     }
   };
 
+  // Render a fully-wired Section (used by both the classic list and WebFocusView detail).
+  const renderSection = (section, idx) => (
+    <Section
+      key={section.id}
+      section={section}
+      sectionIndex={idx}
+      catId={activeTab}
+      progress={progress}
+      onCycleStatus={cycleCheckStatus}
+      onSetStatus={setCheckStatus}
+      searchQuery={searchQuery}
+      expandAll={expandAll}
+      isEditMode={isEditMode}
+      onDeleteSection={(sid) => handleDeleteSectionReq(sid, section.name)}
+      onEditSection={handleEditSection}
+      onAddCheck={handleAddCheck}
+      onDeleteCheck={(checkId) => {
+        const ch = section.checks.find((c) => c.id === checkId);
+        handleDeleteCheckReq(activeTab, section.id, checkId, ch?.text || "this check");
+      }}
+      onEditCheck={(check) => handleEditCheck(activeTab, section.id, check)}
+      onEditGuide={editGuide}
+      guides={guides}
+      notes={notes}
+      onUpdateNote={updateNote}
+      onReorderChecks={reorderChecks}
+      onReorderSections={reorderSections}
+      totalSections={filteredSections.length}
+      scope={scope}
+    />
+  );
+
   return (
     <div className="app-root">
       {deleteConfirm && (
@@ -403,7 +436,15 @@ export default function BugBountyChecklist() {
             )}
 
             {/* Sections List */}
-            {filteredSections.length === 0 && !isEditMode ? (
+            {activeCategory?.id === "web" && !isEditMode ? (
+              <WebFocusView
+                category={activeCategory}
+                progress={progress}
+                searchQuery={searchQuery}
+                sevFilter={sevFilter}
+                renderDetail={renderSection}
+              />
+            ) : filteredSections.length === 0 && !isEditMode ? (
               <div className="empty-state">
                 <div className="empty-state-icon" aria-hidden="true">
                   🔍
@@ -412,41 +453,6 @@ export default function BugBountyChecklist() {
               </div>
             ) : (
               (() => {
-                const renderSection = (section, idx) => (
-                  <Section
-                    key={section.id}
-                    section={section}
-                    sectionIndex={idx}
-                    catId={activeTab}
-                    progress={progress}
-                    onCycleStatus={cycleCheckStatus}
-                    onSetStatus={setCheckStatus}
-                    searchQuery={searchQuery}
-                    expandAll={expandAll}
-                    isEditMode={isEditMode}
-                    onDeleteSection={(sid) => handleDeleteSectionReq(sid, section.name)}
-                    onEditSection={handleEditSection}
-                    onAddCheck={handleAddCheck}
-                    onDeleteCheck={(checkId) => {
-                      const ch = section.checks.find((c) => c.id === checkId);
-                      handleDeleteCheckReq(
-                        activeTab,
-                        section.id,
-                        checkId,
-                        ch?.text || "this check"
-                      );
-                    }}
-                    onEditCheck={(check) => handleEditCheck(activeTab, section.id, check)}
-                    onEditGuide={editGuide}
-                    guides={guides}
-                    notes={notes}
-                    onUpdateNote={updateNote}
-                    onReorderChecks={reorderChecks}
-                    onReorderSections={reorderSections}
-                    totalSections={filteredSections.length}
-                    scope={scope}
-                  />
-                );
                 if (!isGrouped) {
                   return filteredSections.map((section, idx) => renderSection(section, idx));
                 }
