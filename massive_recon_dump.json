@@ -1,0 +1,175 @@
+{"host":"service-0.target-corp.com","source":"subfinder"}
+{"host":"service-1.target-corp.com","source":"subfinder"}
+{"host":"service-2.target-corp.com","source":"subfinder"}
+{"host":"service-3.target-corp.com","source":"subfinder"}
+{"host":"service-4.target-corp.com","source":"subfinder"}
+{"host":"service-5.target-corp.com","source":"subfinder"}
+{"host":"service-6.target-corp.com","source":"subfinder"}
+{"host":"service-7.target-corp.com","source":"subfinder"}
+{"host":"service-8.target-corp.com","source":"subfinder"}
+{"host":"service-9.target-corp.com","source":"subfinder"}
+{"host":"service-10.target-corp.com","source":"subfinder"}
+{"host":"service-11.target-corp.com","source":"subfinder"}
+{"host":"service-12.target-corp.com","source":"subfinder"}
+{"host":"service-13.target-corp.com","source":"subfinder"}
+{"host":"service-14.target-corp.com","source":"subfinder"}
+{"host":"service-15.target-corp.com","source":"subfinder"}
+{"host":"service-16.target-corp.com","source":"subfinder"}
+{"host":"service-17.target-corp.com","source":"subfinder"}
+{"host":"service-18.target-corp.com","source":"subfinder"}
+{"host":"service-19.target-corp.com","source":"subfinder"}
+{"host":"service-20.target-corp.com","source":"subfinder"}
+{"host":"service-21.target-corp.com","source":"subfinder"}
+{"host":"service-22.target-corp.com","source":"subfinder"}
+{"host":"service-23.target-corp.com","source":"subfinder"}
+{"host":"service-24.target-corp.com","source":"subfinder"}
+{"host":"service-25.target-corp.com","source":"subfinder"}
+{"host":"service-26.target-corp.com","source":"subfinder"}
+{"host":"service-27.target-corp.com","source":"subfinder"}
+{"host":"service-28.target-corp.com","source":"subfinder"}
+{"host":"service-29.target-corp.com","source":"subfinder"}
+{"host":"service-30.target-corp.com","source":"subfinder"}
+{"host":"service-31.target-corp.com","source":"subfinder"}
+{"host":"service-32.target-corp.com","source":"subfinder"}
+{"host":"service-33.target-corp.com","source":"subfinder"}
+{"host":"service-34.target-corp.com","source":"subfinder"}
+{"host":"service-35.target-corp.com","source":"subfinder"}
+{"host":"service-36.target-corp.com","source":"subfinder"}
+{"host":"service-37.target-corp.com","source":"subfinder"}
+{"host":"service-38.target-corp.com","source":"subfinder"}
+{"host":"service-39.target-corp.com","source":"subfinder"}
+{"host":"service-40.target-corp.com","source":"subfinder"}
+{"host":"service-41.target-corp.com","source":"subfinder"}
+{"host":"service-42.target-corp.com","source":"subfinder"}
+{"host":"service-43.target-corp.com","source":"subfinder"}
+{"host":"service-44.target-corp.com","source":"subfinder"}
+{"host":"service-45.target-corp.com","source":"subfinder"}
+{"host":"service-46.target-corp.com","source":"subfinder"}
+{"host":"service-47.target-corp.com","source":"subfinder"}
+{"host":"service-48.target-corp.com","source":"subfinder"}
+{"host":"service-49.target-corp.com","source":"subfinder"}
+{"host":"service-50.target-corp.com","source":"subfinder"}
+{"host":"service-51.target-corp.com","source":"subfinder"}
+{"host":"service-52.target-corp.com","source":"subfinder"}
+{"host":"service-53.target-corp.com","source":"subfinder"}
+{"host":"service-54.target-corp.com","source":"subfinder"}
+{"host":"service-55.target-corp.com","source":"subfinder"}
+{"host":"service-56.target-corp.com","source":"subfinder"}
+{"host":"service-57.target-corp.com","source":"subfinder"}
+{"host":"service-58.target-corp.com","source":"subfinder"}
+{"host":"service-59.target-corp.com","source":"subfinder"}
+{"url":"http://service-0.target-corp.com:80","host":"service-0.target-corp.com","port":80,"status_code":200,"tech":["React"],"webserver":"React","a":["10.10.0.0"]}
+{"url":"https://service-1.target-corp.com:443","host":"service-1.target-corp.com","port":443,"status_code":301,"tech":["Express","Node.js"],"webserver":"Express","a":["10.10.0.1"]}
+{"url":"http://service-2.target-corp.com:8080","host":"service-2.target-corp.com","port":8080,"status_code":403,"tech":["Node.js","Java","Tomcat"],"webserver":"Node.js","a":["10.10.0.2"]}
+{"url":"https://service-3.target-corp.com:8443","host":"service-3.target-corp.com","port":8443,"status_code":404,"tech":["Java"],"webserver":"Java","a":["10.10.0.3"]}
+{"url":"http://service-4.target-corp.com:3000","host":"service-4.target-corp.com","port":3000,"status_code":500,"tech":["Tomcat","Nginx"],"webserver":"Tomcat","a":["10.10.0.4"]}
+{"url":"http://service-5.target-corp.com:5000","host":"service-5.target-corp.com","port":5000,"status_code":200,"tech":["Nginx","Apache","PHP"],"webserver":"Nginx","a":["10.10.0.5"]}
+{"url":"http://service-6.target-corp.com:9200","host":"service-6.target-corp.com","port":9200,"status_code":301,"tech":["Apache"],"webserver":"Apache","a":["10.10.0.6"]}
+{"url":"http://service-7.target-corp.com:6379","host":"service-7.target-corp.com","port":6379,"status_code":403,"tech":["PHP","Django"],"webserver":"PHP","a":["10.10.0.7"]}
+{"url":"http://service-8.target-corp.com:27017","host":"service-8.target-corp.com","port":27017,"status_code":404,"tech":["Django","Python","Ruby on Rails"],"webserver":"Django","a":["10.10.0.8"]}
+{"url":"http://service-9.target-corp.com:80","host":"service-9.target-corp.com","port":80,"status_code":500,"tech":["Python"],"webserver":"Python","a":["10.10.0.9"]}
+{"url":"https://service-10.target-corp.com:443","host":"service-10.target-corp.com","port":443,"status_code":200,"tech":["Ruby on Rails","GitLab"],"webserver":"Ruby on Rails","a":["10.10.0.10"]}
+{"url":"http://service-11.target-corp.com:8080","host":"service-11.target-corp.com","port":8080,"status_code":301,"tech":["GitLab","Jenkins","IIS"],"webserver":"GitLab","a":["10.10.0.11"]}
+{"url":"https://service-12.target-corp.com:8443","host":"service-12.target-corp.com","port":8443,"status_code":403,"tech":["Jenkins"],"webserver":"Jenkins","a":["10.10.0.12"]}
+{"url":"http://service-13.target-corp.com:3000","host":"service-13.target-corp.com","port":3000,"status_code":404,"tech":["IIS","SharePoint"],"webserver":"IIS","a":["10.10.0.13"]}
+{"url":"http://service-14.target-corp.com:5000","host":"service-14.target-corp.com","port":5000,"status_code":500,"tech":["SharePoint","MySQL","Redis"],"webserver":"SharePoint","a":["10.10.0.14"]}
+{"url":"http://service-15.target-corp.com:9200","host":"service-15.target-corp.com","port":9200,"status_code":200,"tech":["MySQL"],"webserver":"MySQL","a":["10.10.0.15"]}
+{"url":"http://service-16.target-corp.com:6379","host":"service-16.target-corp.com","port":6379,"status_code":301,"tech":["Redis","MongoDB"],"webserver":"Redis","a":["10.10.0.16"]}
+{"url":"http://service-17.target-corp.com:27017","host":"service-17.target-corp.com","port":27017,"status_code":403,"tech":["MongoDB","React","Express"],"webserver":"MongoDB","a":["10.10.0.17"]}
+{"url":"http://service-18.target-corp.com:80","host":"service-18.target-corp.com","port":80,"status_code":404,"tech":["React"],"webserver":"React","a":["10.10.0.18"]}
+{"url":"https://service-19.target-corp.com:443","host":"service-19.target-corp.com","port":443,"status_code":500,"tech":["Express","Node.js"],"webserver":"Express","a":["10.10.0.19"]}
+{"url":"http://service-20.target-corp.com:8080","host":"service-20.target-corp.com","port":8080,"status_code":200,"tech":["Node.js","Java","Tomcat"],"webserver":"Node.js","a":["10.10.0.20"]}
+{"url":"https://service-21.target-corp.com:8443","host":"service-21.target-corp.com","port":8443,"status_code":301,"tech":["Java"],"webserver":"Java","a":["10.10.0.21"]}
+{"url":"http://service-22.target-corp.com:3000","host":"service-22.target-corp.com","port":3000,"status_code":403,"tech":["Tomcat","Nginx"],"webserver":"Tomcat","a":["10.10.0.22"]}
+{"url":"http://service-23.target-corp.com:5000","host":"service-23.target-corp.com","port":5000,"status_code":404,"tech":["Nginx","Apache","PHP"],"webserver":"Nginx","a":["10.10.0.23"]}
+{"url":"http://service-24.target-corp.com:9200","host":"service-24.target-corp.com","port":9200,"status_code":500,"tech":["Apache"],"webserver":"Apache","a":["10.10.0.24"]}
+{"url":"http://service-25.target-corp.com:6379","host":"service-25.target-corp.com","port":6379,"status_code":200,"tech":["PHP","Django"],"webserver":"PHP","a":["10.10.0.25"]}
+{"url":"http://service-26.target-corp.com:27017","host":"service-26.target-corp.com","port":27017,"status_code":301,"tech":["Django","Python","Ruby on Rails"],"webserver":"Django","a":["10.10.0.26"]}
+{"url":"http://service-27.target-corp.com:80","host":"service-27.target-corp.com","port":80,"status_code":403,"tech":["Python"],"webserver":"Python","a":["10.10.0.27"]}
+{"url":"https://service-28.target-corp.com:443","host":"service-28.target-corp.com","port":443,"status_code":404,"tech":["Ruby on Rails","GitLab"],"webserver":"Ruby on Rails","a":["10.10.0.28"]}
+{"url":"http://service-29.target-corp.com:8080","host":"service-29.target-corp.com","port":8080,"status_code":500,"tech":["GitLab","Jenkins","IIS"],"webserver":"GitLab","a":["10.10.0.29"]}
+{"url":"https://service-30.target-corp.com:8443","host":"service-30.target-corp.com","port":8443,"status_code":200,"tech":["Jenkins"],"webserver":"Jenkins","a":["10.10.0.30"]}
+{"url":"http://service-31.target-corp.com:3000","host":"service-31.target-corp.com","port":3000,"status_code":301,"tech":["IIS","SharePoint"],"webserver":"IIS","a":["10.10.0.31"]}
+{"url":"http://service-32.target-corp.com:5000","host":"service-32.target-corp.com","port":5000,"status_code":403,"tech":["SharePoint","MySQL","Redis"],"webserver":"SharePoint","a":["10.10.0.32"]}
+{"url":"http://service-33.target-corp.com:9200","host":"service-33.target-corp.com","port":9200,"status_code":404,"tech":["MySQL"],"webserver":"MySQL","a":["10.10.0.33"]}
+{"url":"http://service-34.target-corp.com:6379","host":"service-34.target-corp.com","port":6379,"status_code":500,"tech":["Redis","MongoDB"],"webserver":"Redis","a":["10.10.0.34"]}
+{"url":"http://service-35.target-corp.com:27017","host":"service-35.target-corp.com","port":27017,"status_code":200,"tech":["MongoDB","React","Express"],"webserver":"MongoDB","a":["10.10.0.35"]}
+{"url":"http://service-36.target-corp.com:80","host":"service-36.target-corp.com","port":80,"status_code":301,"tech":["React"],"webserver":"React","a":["10.10.0.36"]}
+{"url":"https://service-37.target-corp.com:443","host":"service-37.target-corp.com","port":443,"status_code":403,"tech":["Express","Node.js"],"webserver":"Express","a":["10.10.0.37"]}
+{"url":"http://service-38.target-corp.com:8080","host":"service-38.target-corp.com","port":8080,"status_code":404,"tech":["Node.js","Java","Tomcat"],"webserver":"Node.js","a":["10.10.0.38"]}
+{"url":"https://service-39.target-corp.com:8443","host":"service-39.target-corp.com","port":8443,"status_code":500,"tech":["Java"],"webserver":"Java","a":["10.10.0.39"]}
+{"url":"http://service-40.target-corp.com:3000","host":"service-40.target-corp.com","port":3000,"status_code":200,"tech":["Tomcat","Nginx"],"webserver":"Tomcat","a":["10.10.0.40"]}
+{"url":"http://service-41.target-corp.com:5000","host":"service-41.target-corp.com","port":5000,"status_code":301,"tech":["Nginx","Apache","PHP"],"webserver":"Nginx","a":["10.10.0.41"]}
+{"url":"http://service-42.target-corp.com:9200","host":"service-42.target-corp.com","port":9200,"status_code":403,"tech":["Apache"],"webserver":"Apache","a":["10.10.0.42"]}
+{"url":"http://service-43.target-corp.com:6379","host":"service-43.target-corp.com","port":6379,"status_code":404,"tech":["PHP","Django"],"webserver":"PHP","a":["10.10.0.43"]}
+{"url":"http://service-44.target-corp.com:27017","host":"service-44.target-corp.com","port":27017,"status_code":500,"tech":["Django","Python","Ruby on Rails"],"webserver":"Django","a":["10.10.0.44"]}
+{"template-id":"cve-2021-44228","info":{"name":"Vulnerability cve-2021-44228","severity":"info"},"host":"https://service-0.target-corp.com","matched-at":"https://service-0.target-corp.com/path/to/vuln"}
+{"template-id":"exposed-env","info":{"name":"Vulnerability exposed-env","severity":"low"},"host":"https://service-1.target-corp.com","matched-at":"https://service-1.target-corp.com/path/to/vuln"}
+{"template-id":"xss-reflected","info":{"name":"Vulnerability xss-reflected","severity":"medium"},"host":"https://service-2.target-corp.com","matched-at":"https://service-2.target-corp.com/path/to/vuln"}
+{"template-id":"sqli-error-based","info":{"name":"Vulnerability sqli-error-based","severity":"high"},"host":"https://service-3.target-corp.com","matched-at":"https://service-3.target-corp.com/path/to/vuln"}
+{"template-id":"aws-keys-exposed","info":{"name":"Vulnerability aws-keys-exposed","severity":"critical"},"host":"https://service-4.target-corp.com","matched-at":"https://service-4.target-corp.com/path/to/vuln"}
+{"template-id":"dir-listing","info":{"name":"Vulnerability dir-listing","severity":"info"},"host":"https://service-5.target-corp.com","matched-at":"https://service-5.target-corp.com/path/to/vuln"}
+{"template-id":"tech-detect","info":{"name":"Vulnerability tech-detect","severity":"low"},"host":"https://service-6.target-corp.com","matched-at":"https://service-6.target-corp.com/path/to/vuln"}
+{"template-id":"cors-misconfig","info":{"name":"Vulnerability cors-misconfig","severity":"medium"},"host":"https://service-7.target-corp.com","matched-at":"https://service-7.target-corp.com/path/to/vuln"}
+{"template-id":"cve-2021-44228","info":{"name":"Vulnerability cve-2021-44228","severity":"high"},"host":"https://service-8.target-corp.com","matched-at":"https://service-8.target-corp.com/path/to/vuln"}
+{"template-id":"exposed-env","info":{"name":"Vulnerability exposed-env","severity":"critical"},"host":"https://service-9.target-corp.com","matched-at":"https://service-9.target-corp.com/path/to/vuln"}
+{"template-id":"xss-reflected","info":{"name":"Vulnerability xss-reflected","severity":"info"},"host":"https://service-10.target-corp.com","matched-at":"https://service-10.target-corp.com/path/to/vuln"}
+{"template-id":"sqli-error-based","info":{"name":"Vulnerability sqli-error-based","severity":"low"},"host":"https://service-11.target-corp.com","matched-at":"https://service-11.target-corp.com/path/to/vuln"}
+{"template-id":"aws-keys-exposed","info":{"name":"Vulnerability aws-keys-exposed","severity":"medium"},"host":"https://service-12.target-corp.com","matched-at":"https://service-12.target-corp.com/path/to/vuln"}
+{"template-id":"dir-listing","info":{"name":"Vulnerability dir-listing","severity":"high"},"host":"https://service-13.target-corp.com","matched-at":"https://service-13.target-corp.com/path/to/vuln"}
+{"template-id":"tech-detect","info":{"name":"Vulnerability tech-detect","severity":"critical"},"host":"https://service-14.target-corp.com","matched-at":"https://service-14.target-corp.com/path/to/vuln"}
+{"template-id":"cors-misconfig","info":{"name":"Vulnerability cors-misconfig","severity":"info"},"host":"https://service-15.target-corp.com","matched-at":"https://service-15.target-corp.com/path/to/vuln"}
+{"template-id":"cve-2021-44228","info":{"name":"Vulnerability cve-2021-44228","severity":"low"},"host":"https://service-16.target-corp.com","matched-at":"https://service-16.target-corp.com/path/to/vuln"}
+{"template-id":"exposed-env","info":{"name":"Vulnerability exposed-env","severity":"medium"},"host":"https://service-17.target-corp.com","matched-at":"https://service-17.target-corp.com/path/to/vuln"}
+{"template-id":"xss-reflected","info":{"name":"Vulnerability xss-reflected","severity":"high"},"host":"https://service-18.target-corp.com","matched-at":"https://service-18.target-corp.com/path/to/vuln"}
+{"template-id":"sqli-error-based","info":{"name":"Vulnerability sqli-error-based","severity":"critical"},"host":"https://service-19.target-corp.com","matched-at":"https://service-19.target-corp.com/path/to/vuln"}
+{"template-id":"aws-keys-exposed","info":{"name":"Vulnerability aws-keys-exposed","severity":"info"},"host":"https://service-20.target-corp.com","matched-at":"https://service-20.target-corp.com/path/to/vuln"}
+{"template-id":"dir-listing","info":{"name":"Vulnerability dir-listing","severity":"low"},"host":"https://service-21.target-corp.com","matched-at":"https://service-21.target-corp.com/path/to/vuln"}
+{"template-id":"tech-detect","info":{"name":"Vulnerability tech-detect","severity":"medium"},"host":"https://service-22.target-corp.com","matched-at":"https://service-22.target-corp.com/path/to/vuln"}
+{"template-id":"cors-misconfig","info":{"name":"Vulnerability cors-misconfig","severity":"high"},"host":"https://service-23.target-corp.com","matched-at":"https://service-23.target-corp.com/path/to/vuln"}
+{"template-id":"cve-2021-44228","info":{"name":"Vulnerability cve-2021-44228","severity":"critical"},"host":"https://service-24.target-corp.com","matched-at":"https://service-24.target-corp.com/path/to/vuln"}
+{"template-id":"exposed-env","info":{"name":"Vulnerability exposed-env","severity":"info"},"host":"https://service-25.target-corp.com","matched-at":"https://service-25.target-corp.com/path/to/vuln"}
+{"template-id":"xss-reflected","info":{"name":"Vulnerability xss-reflected","severity":"low"},"host":"https://service-26.target-corp.com","matched-at":"https://service-26.target-corp.com/path/to/vuln"}
+{"template-id":"sqli-error-based","info":{"name":"Vulnerability sqli-error-based","severity":"medium"},"host":"https://service-27.target-corp.com","matched-at":"https://service-27.target-corp.com/path/to/vuln"}
+{"template-id":"aws-keys-exposed","info":{"name":"Vulnerability aws-keys-exposed","severity":"high"},"host":"https://service-28.target-corp.com","matched-at":"https://service-28.target-corp.com/path/to/vuln"}
+{"template-id":"dir-listing","info":{"name":"Vulnerability dir-listing","severity":"critical"},"host":"https://service-29.target-corp.com","matched-at":"https://service-29.target-corp.com/path/to/vuln"}
+https://service-40.target-corp.com/api/v1/users?id=0
+http://service-40.target-corp.com/dashboard/stats
+https://service-41.target-corp.com/api/v1/users?id=1
+http://service-41.target-corp.com/dashboard/stats
+https://service-42.target-corp.com/api/v1/users?id=2
+http://service-42.target-corp.com/dashboard/stats
+https://service-43.target-corp.com/api/v1/users?id=3
+http://service-43.target-corp.com/dashboard/stats
+https://service-44.target-corp.com/api/v1/users?id=4
+http://service-44.target-corp.com/dashboard/stats
+https://service-45.target-corp.com/api/v1/users?id=5
+http://service-45.target-corp.com/dashboard/stats
+https://service-46.target-corp.com/api/v1/users?id=6
+http://service-46.target-corp.com/dashboard/stats
+https://service-47.target-corp.com/api/v1/users?id=7
+http://service-47.target-corp.com/dashboard/stats
+https://service-48.target-corp.com/api/v1/users?id=8
+http://service-48.target-corp.com/dashboard/stats
+https://service-49.target-corp.com/api/v1/users?id=9
+http://service-49.target-corp.com/dashboard/stats
+https://service-50.target-corp.com/api/v1/users?id=10
+http://service-50.target-corp.com/dashboard/stats
+https://service-51.target-corp.com/api/v1/users?id=11
+http://service-51.target-corp.com/dashboard/stats
+https://service-52.target-corp.com/api/v1/users?id=12
+http://service-52.target-corp.com/dashboard/stats
+https://service-53.target-corp.com/api/v1/users?id=13
+http://service-53.target-corp.com/dashboard/stats
+https://service-54.target-corp.com/api/v1/users?id=14
+http://service-54.target-corp.com/dashboard/stats
+https://service-55.target-corp.com/api/v1/users?id=15
+http://service-55.target-corp.com/dashboard/stats
+https://service-56.target-corp.com/api/v1/users?id=16
+http://service-56.target-corp.com/dashboard/stats
+https://service-57.target-corp.com/api/v1/users?id=17
+http://service-57.target-corp.com/dashboard/stats
+https://service-58.target-corp.com/api/v1/users?id=18
+http://service-58.target-corp.com/dashboard/stats
+https://service-59.target-corp.com/api/v1/users?id=19
+http://service-59.target-corp.com/dashboard/stats

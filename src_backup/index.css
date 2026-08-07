@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --bg2: #f8f9fc;
+  --bg3: #f1f3f8;
+  --bg4: #e8ecf4;
+  --border: #e2e6ef;
+  --border2: #d0d6e4;
+  --text: #374151;
+  --text2: #6b7280;
+  --text3: #9ca3af;
+  --accent: #dc2626;
+  --green: #059669;
+  --blue: #2563eb;
+  --yellow: #d97706;
+  --purple: #7c3aed;
+  --mono: 'JetBrains Mono', monospace;
+  --sans: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #ffffff;
+  color: var(--text);
+  font-family: var(--sans);
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: #ffffff;
+}
+
+input, select, textarea, button { font-family: var(--sans); }
+
+input[type="text"], input[type="search"], textarea, select {
+  background: #ffffff;
+  border: 1px solid var(--border2);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus, input[type="search"]:focus, textarea:focus, select:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f3f8; }
+::-webkit-scrollbar-thumb { background: #d0d6e4; border-radius: 3px; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border-width: 0;
+}

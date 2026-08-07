@@ -1,0 +1,435 @@
+WEB checks with NO "how to test" guide (397 total)
+==================================================
+
+## Subdomain Enumeration  (45)
+  1. Use assetfinder to find subdomains from various data sources
+  2. Use Findomain for fast subdomain enumeration with certificate transparency
+  3. Use knockpy for subdomain enumeration with DNS zone transfer checks
+  4. Use DNSdumpster for DNS recon and visual subdomain mapping
+  5. Use SecurityTrails API for historical and current DNS records
+  6. Use wayback machine CDX API for discovering old subdomains
+  7. Use VirusTotal domain report for subdomain enumeration from passive DNS
+  8. Use Shodan for subdomain and open port discovery via internet scanning
+  9. Use Censys for certificate-based subdomain discovery at scale
+  10. Use Facebook CT logs (ct.facebook.com) for certificate transparency search
+  11. Use Google dorking: site:target.com -www to find subdomains
+  12. Use Bing dorking: site:target.com for additional subdomain results
+  13. Use Yahoo and DuckDuckGo for subdomain search engine diversity
+  14. Perform DNS brute force with dnsrecon or dnscan using wordlists
+  15. Use massdns for fast DNS resolution of discovered subdomains
+  16. Check for wildcard DNS responses to filter false positive subdomains
+  17. Enumerate subdomains from JavaScript files on the main domain
+  18. Extract subdomains from SPF records via include mechanisms
+  19. Extract subdomains from DMARC aggregate reports (rua tag)
+  20. Use Google Transparency Report for certificate search
+  21. Verify DNSSEC configuration and look for misconfigurations
+  22. Use nmap DNS brute script for additional subdomain enumeration
+  23. Check for dangling CNAME records pointing to expired services
+  24. Look for internal IP address leaks in DNS records
+  25. Use sublist3r with all search engine modules enabled
+  26. Check for subdomains in robots.txt and sitemap.xml files
+  27. Search GitHub/GitLab repositories for subdomain references in code
+  28. Check Stack Overflow and developer forums for subdomain leaks
+  29. Use Chaos dataset from ProjectDiscovery for community subdomains
+  30. Check for subdomains embedded in Android/iOS app APKs/IPAs
+  31. Use Rapid7 Open Data (Project Sonar) for forward DNS lookup
+  32. Enumerate cloud subdomains (AWS S3, Azure Blob, GCP Storage)
+  33. Check for subdomains leaked in email headers (SPF/DKIM/DMARC)
+  34. Use Recon.dev API for subdomain enumeration from recon data
+  35. Check for Punycode/IDN subdomain variants for homograph attacks
+  36. Search for subdomains in Internet Archive Wayback CDX API
+  37. Look for subdomains in technology detection tools (Wappalyzer)
+  38. Use BufferOver.run for subdomain data from Rapid7 Sonar
+  39. Check for subdomains in Common Crawl data index
+  40. Use DNSrecon for SRV record enumeration
+  41. Check for subdomains via HTTP certificate parsing (openssl s_client)
+  42. Use CertSpotter API for certificate transparency monitoring
+  43. Search for subdomains in FOFA search engine
+  44. Check for subdomains in ZoomEye search engine
+  45. Use DorkAssistant for automated Google dork subdomain enumeration
+
+## Port Scanning & Service Enumeration  (49)
+  1. Use masscan for ultra-fast port scanning across large IP ranges
+  2. Use rustscan for fast port discovery with automatic nmap integration
+  3. Run nmap UDP scan on common ports (53, 67, 68, 123, 161, 500, 514)
+  4. Use nmap service version detection (-sV) on all discovered open ports
+  5. Use nmap OS detection (-O) when ICMP is allowed
+  6. Run nmap default script scan (-sC) for vulnerability detection scripts
+  7. Use unicornscan for asynchronous port scanning with speed benefits
+  8. Check for services on non-standard ports (HTTP on 8080, 8443, 8000)
+  9. Scan for hidden admin ports (10000 Webmin, 20000 Usermin, 30000)
+  10. Use naabu for fast port scanning with SYN and CONNECT mode support
+  11. Enumerate services behind load balancers with multiple scan passes
+  12. Check for IPv6 addresses and run port scans on IPv6 interfaces
+  13. Use nmap timing templates (T0-T5) based on stealth requirements
+  14. Run nmap with fragmentation and decoy options for IDS evasion
+  15. Check for port knocking sequences on filtered ports
+  16. Identify proxy services (Squid on 3128, SOCKS on 1080, CCProxy on 808)
+  17. Enumerate database ports (3306 MySQL, 5432 PostgreSQL, 1433 MSSQL, 27017 MongoDB)
+  18. Check for Redis on port 6379 with unauthenticated access enabled
+  19. Check for Elasticsearch on port 9200 with unauthorized read access
+  20. Check for Memcached on port 11211 with unauthenticated access
+  21. Scan for Docker API on port 2375/2376 for unauthenticated access
+  22. Scan for Kubernetes API on port 6443/8443 for cluster access
+  23. Check for RDP on port 3389 with weak or no NLA enforcement
+  24. Check for SSH on port 22 and non-standard ports with default creds
+  25. Check for FTP on port 21 with anonymous login enabled
+  26. Check for SMTP on port 25 for open relay misconfiguration
+  27. Check for SNMP on port 161 with default community strings (public/private)
+  28. Identify load balancers (F5, HAProxy, Nginx) via server headers
+  29. Check for VNC on port 5900+ without authentication requirement
+  30. Enumerate RPC services on port 111 with rpcinfo
+  31. Check for WebDAV on common ports for file management access
+  32. Scan for Jenkins on port 8080/8443 for CI/CD access
+  33. Check for GitLab on port 80/443/8080 for repository access
+  34. Look for Jupyter notebooks on port 8888 with no authentication
+  35. Check for Spark UI on port 4040/8080/8081 for cluster info
+  36. Enumerate Hadoop services on ports 50070/8088/19888 for big data
+  37. Check for Consul on port 8500 for service discovery access
+  38. Check for etcd on port 2379 for key-value store access
+  39. Check for ZooKeeper on port 2181 for distributed coordination access
+  40. Check for Apache Kafka on port 9092 for message broker access
+  41. Check for RabbitMQ on port 5672/15672 for message queue access
+  42. Check for ActiveMQ on port 61616/8161 for JMS access
+  43. Check for Nagios on port 5666/80 for monitoring dashboard access
+  44. Check for Zabbix on port 10050/10051 for monitoring access
+  45. Check for Puppet on port 8140 for configuration management access
+  46. Check for Ansible Tower on port 443 for automation access
+  47. Check for TeamCity on port 8111 for CI/CD access
+  48. Check for Bamboo on port 8085 for CI/CD access
+  49. Check for SonarQube on port 9000 for code quality dashboard access
+
+## Technology Fingerprinting  (40)
+  1. Use Wappalyzer browser extension for technology stack detection
+  2. Use whatweb for command-line technology fingerprinting at scale
+  3. Use webanalyze (Go-based Wappalyzer) for fast batch fingerprinting
+  4. Check HTTP response headers for server version disclosure (Server, X-Powered-By)
+  5. Check X-Powered-By header for backend technology identification
+  6. Analyze cookies for framework indicators (PHPSESSID, JSESSIONID, ASP.NET_SessionId)
+  7. Check for framework-specific meta tags and generator tags in HTML
+  8. Identify CMS using WPScan (WordPress), Joomscan (Joomla), Droopescan (Drupal)
+  9. Detect JavaScript frameworks via source code analysis (React, Angular, Vue)
+  10. Check for React indicators (__NEXT_DATA__, _reactRootContainer)
+  11. Check for Angular indicators (ng-version, ng-app, _nghost)
+  12. Check for Vue.js indicators (__vue__, data-v- attributes)
+  13. Identify backend language from error messages and file extensions
+  14. Check for Cloudflare CDN via cf-ray headers and DNS resolution
+  15. Identify hosting provider from IP WHOIS data and ASN lookup
+  16. Use BuiltWith API for detailed technology profiling and history
+  17. Check for WAF using wafw00f or wappalyzer WAF detection
+  18. Identify CDN provider via CNAME records (cdn, edge, cloudfront)
+  19. Check for specific CMS version via readme.html, changelog files
+  20. Use fingerprintx for service fingerprinting on open ports
+  21. Detect API gateway from response headers (X-Request-ID, X-Amzn-Trace)
+  22. Identify GraphQL endpoint via introspection query
+  23. Check for Swagger/OpenAPI documentation at /swagger-ui/, /api-docs/
+  24. Detect GraphQL Playground or GraphiQL interface at /graphql
+  25. Check for WordPress REST API at /wp-json/wp/v2/
+  26. Identify Laravel via /telescope, /_debugbar, /horizon endpoints
+  27. Check for Django admin at /admin/ or /django-admin/ login panel
+  28. Detect Rails via specific cookie naming (app_session) and headers
+  29. Check for Spring Boot actuator endpoints (/actuator/health, /actuator/env)
+  30. Identify ASP.NET via viewstate and event validation hidden fields
+  31. Check for PHP via X-Powered-By: PHP header and .php extensions
+  32. Detect Node.js via X-Powered-By: Express header
+  33. Check for Next.js via __NEXT_DATA__ script tag and build ID
+  34. Check for Nuxt.js via __NUXT__ script tag and data attributes
+  35. Identify Gatsby via gatsby-script and ___graphql endpoint
+  36. Check for Svelte via class:svelte-xxx data attributes
+  37. Detect Ember.js via meta name=ember-cli and script tags
+  38. Check for Meteor via __meteor_runtime_config__ script
+  39. Identify Flask via specific cookie naming and Werkzeug headers
+  40. Detect FastAPI via /docs (Swagger UI) and /redoc endpoints
+
+## Content & URL Discovery  (50)
+  1. Use ffuf for fast directory and file fuzzing with recursive mode
+  2. Use gobuster for directory/file brute forcing with multiple threads
+  3. Use dirsearch for recursive directory scanning with extensions
+  4. Use feroxbuster for recursive content discovery with smart filtering
+  5. Check for robots.txt and analyze all disallowed entries for hidden paths
+  6. Check for sitemap.xml for hidden URLs and site structure information
+  7. Check for .well-known/ directory (security.txt, assetlinks.json, change-password)
+  8. Look for backup files (.bak, .old, .orig, .save, .swp, .tmp)
+  9. Check for configuration files (.env, .htaccess, .htpasswd, web.config, app.config)
+  10. Look for source code repositories (.git, .svn, .hg, .bzr directories)
+  11. Check for exposed .git directory (HEAD, config, index, objects)
+  12. Search for .DS_Store files for macOS directory listing information
+  13. Check for WP-config.php, config.php, database.yml, settings.py exposure
+  14. Look for backup archives (.zip, .tar.gz, .rar, .7z, .bak.zip)
+  15. Search for log files (error.log, access.log, debug.log, application.log)
+  16. Check for debug endpoints (/debug, /trace, /status, /healthz, /info)
+  17. Look for test files (test.php, test.html, info.php, phpinfo.php)
+  18. Check for API documentation (/api-docs, /swagger, /redoc, /graphql)
+  19. Look for admin panels (/admin, /administrator, /manager, /cpanel, /backend)
+  20. Check for phpMyAdmin (/phpmyadmin, /pma, /dbadmin, /mysql)
+  21. Look for CMS admin (/wp-admin, /wp-login.php, /administrator/index.php)
+  22. Check for staging/dev environments on subdomains (dev., staging., test.)
+  23. Search for publicly accessible Google Docs/Sheets with sensitive data
+  24. Use waybackurls for historical URL discovery from Wayback Machine
+  25. Use gau for fetching URLs from AlienVault, Wayback, Common Crawl
+  26. Extract all URLs and endpoints from JavaScript files systematically
+  27. Check for .env file exposure with database credentials and API keys
+  28. Look for docker-compose.yml and Dockerfile exposure in root directory
+  29. Check for package.json, composer.json, requirements.txt exposure
+  30. Search for .htpasswd files with credential exposure
+  31. Look for database dump files (.sql, .db, .sqlite, .mdb)
+  32. Check for Jenkins script console access at /script endpoint
+  33. Look for exposed Grafana dashboards at /grafana/ or :3000
+  34. Check for Prometheus metrics endpoint at /metrics
+  35. Look for Kibana dashboard on port 5601 with no auth
+  36. Check for Airflow web UI on port 8080 with DAG access
+  37. Look for RabbitMQ management on port 15672 with default creds
+  38. Check for Solr admin on port 8983 with core access
+  39. Look for MinIO console on port 9001 with bucket listing
+  40. Check for Apache Tomcat manager at /manager/html
+  41. Look for JBoss admin console at /admin-console/
+  42. Check for WebLogic admin at /console/ with default creds
+  43. Look for IBM WebSphere admin at /ibm/console/
+  44. Check for Confluence admin at /admin/ with default credentials
+  45. Look for Jira admin at /secure/admin/ with default credentials
+  46. Check for exposed .well-known/openid-configuration
+  47. Look for .well-known/oauth-authorization-server
+  48. Check for .well-known/assetlinks.json for Android app linking
+  49. Look for .well-known/apple-app-site-association for iOS universal links
+  50. Check for .well-known/security.txt for security contact information
+
+## Link & Parameter Discovery  (40)
+  1. Use katana for comprehensive web crawling and URL discovery
+  2. Use hakrawler for fast web crawling with depth control
+  3. Use Burp Suite spider for comprehensive site mapping
+  4. Extract all links from JavaScript files using LinkFinder tool
+  5. Extract API endpoints from JS files using JSParser analysis
+  6. Use paramspider for parameter discovery from historical data
+  7. Find hidden parameters with arjun for HTTP parameter discovery
+  8. Check for path-based parameters in URL paths
+  9. Analyze JavaScript for API routes and hidden parameters
+  10. Check for URL fragments and hash-based routing (#/path)
+  11. Discover WebSocket endpoints and real-time connections
+  12. Look for Server-Sent Events (SSE) endpoints for streaming data
+  13. Find polling endpoints and long-polling connections for real-time
+  14. Check for microservices architecture with multiple API gateways
+  15. Discover internal API documentation in JS source map files
+  16. Extract variables and constants from minified JavaScript
+  17. Check for sourcemap files (.map) for original source code access
+  18. Analyze Angular/React/Vue compiled templates for route definitions
+  19. Check for REST API versioning (/v1/, /v2/, /v3/)
+  20. Look for GraphQL schema via introspection queries
+  21. Discover SOAP WSDL endpoints (?wsdl, ?WSDL, ?xsd)
+  22. Check for XML-RPC endpoints (/xmlrpc.php)
+  23. Find form action URLs and hidden form field parameters
+  24. Analyze AJAX calls in browser developer tools network tab
+  25. Check for iframe and embed source URLs for cross-origin content
+  26. Discover image/asset CDN URLs for additional attack surface
+  27. Look for OAuth/OpenID configuration endpoints at /.well-known/
+  28. Check for SAML metadata endpoints for federation config
+  29. Find callback/redirect URLs in authentication flows
+  30. Analyze postMessage handlers for cross-origin communication
+  31. Check for URL parameters in Referer headers of outgoing links
+  32. Look for email templates with parameterized URLs
+  33. Check for webhooks with configurable callback URLs
+  34. Discover file upload endpoints and their accepted parameters
+  35. Check for export/download endpoints with configurable output
+  36. Look for search endpoints with filter/sort parameters
+  37. Check for pagination parameters (page, offset, limit, cursor)
+  38. Discover batch/bulk operation endpoints
+  39. Check for admin/debug endpoints from JS route definitions
+  40. Look for WebSocket message format from JS analysis
+
+## Password & Credential Attacks  (40)
+  1. Test for weak password policies (minimum length, complexity requirements)
+  2. Test for default credentials on admin panels and services
+  3. Check for common passwords (admin/admin, root/root, test/test)
+  4. Test password reset flow for token predictability or entropy issues
+  5. Check if password reset token is sent in URL (GET parameter leakage)
+  6. Test password reset for email enumeration via different server responses
+  7. Check if old password is required when changing password
+  8. Test for password reuse policies and enforcement
+  9. Check for credential stuffing vulnerability (absence of rate limiting)
+  10. Test brute force protection on login endpoints with automation
+  11. Check for account lockout mechanism and its threshold
+  12. Test if account lockout can be used for user enumeration attacks
+  13. Check if passwords are stored in plaintext or reversible encryption
+  14. Test for password length limit causing truncation attacks
+  15. Check for Unicode normalization issues in password handling
+  16. Test password field for SQL injection vulnerabilities
+  17. Check if passwords are always transmitted over HTTPS
+  18. Test for password stored in browser autocomplete (autocomplete=on)
+  19. Check for password stored in localStorage/sessionStorage (JavaScript)
+  20. Test for multi-factor authentication bypass via direct endpoint access
+  21. Check if 2FA can be bypassed by directly accessing post-authentication pages
+  22. Test 2FA brute force on OTP verification codes
+  23. Check if 2FA code is predictable or follows sequential patterns
+  24. Test 2FA code reuse (same code works multiple times within validity)
+  25. Check if backup/recovery codes are generated with sufficient entropy
+  26. Test if 2FA can be disabled without current 2FA verification
+  27. Check for SMS interception vulnerability in 2FA implementation
+  28. Test for 2FA bypass via response manipulation (changing status code)
+  29. Check if 2FA is enforced for all sensitive account actions
+  30. Test for rate limiting on 2FA verification endpoint
+  31. Test for password reset token expiration and single-use enforcement
+  32. Check for password reset with different user email (account takeover)
+  33. Test for password complexity bypass via encoding or special chars
+  34. Check for password maximum length DoS (extremely long password)
+  35. Test for timing attack on password comparison function
+  36. Check for password pepper usage in hash computation
+  37. Test for simultaneous login from multiple locations policy
+  38. Check for credential rotation policy enforcement
+  39. Test for password manager field detection (autocomplete=new-password)
+  40. Check for CAPTCHA bypass on login/password reset forms
+
+## Session Management  (1)
+  1. Test for session cookie prefix (__Host- and __Secure- usage)
+
+## IDOR (Insecure Direct Object Reference)  (25)
+  1. Test for IDOR in URL path parameters (/users/123/profile)
+  2. Test for IDOR in query parameters (?user_id=123&doc;_id=456)
+  3. Test for IDOR in POST body parameters (user_id in form data)
+  4. Test for IDOR in JSON request body ({"user_id": 123})
+  5. Test for IDOR in HTTP headers (X-User-Id, X-Account-Id, X-Requester-Id)
+  6. Test for IDOR with UUID vs sequential integer identifiers
+  7. Test for IDOR with encoded parameters (base64, URL encoding, hex)
+  8. Test for IDOR across different user roles (admin vs user vs guest)
+  9. Test for IDOR in file download/upload endpoints
+  10. Test for IDOR in API endpoints with different HTTP methods (GET/PUT/DELETE)
+  11. Test for IDOR by modifying cookie values (user_id cookie)
+  12. Test for IDOR in WebSocket messages and real-time communication
+  13. Test for IDOR in batch/bulk operations (multiple resource access)
+  14. Test for IDOR with parameter addition (adding user_id to existing request)
+  15. Test for IDOR with wrapping IDs (negative numbers, zero, MAX_INT)
+  16. Test for IDOR with other user's UUID/GUID discovered via info leak
+  17. Test for IDOR in search and filter parameters
+  18. Test for IDOR in pagination parameters (offset, cursor)
+  19. Test for IDOR in nested objects (user.profile.id, order.item.id)
+  20. Test for IDOR across different applications in same organization
+  21. Test for IDOR in receipt/invoice access by sequential numbers
+  22. Test for IDOR in messaging/comment endpoints
+  23. Test for IDOR in notification subscription endpoints
+  24. Test for IDOR in API key-scoped resources
+  25. Test for IDOR with different API versions (v1 vs v2)
+
+## Server-Side Template Injection (SSTI)  (1)
+  1. Test for ERB (Ruby) template injection
+
+## Google Dorking & OSINT  (49)
+  1. Google dork: site:target.com filetype:pdf
+  2. Google dork: site:target.com filetype:xlsx
+  3. Google dork: site:target.com filetype:docx
+  4. Google dork: site:target.com filetype:txt
+  5. Google dork: site:target.com filetype:log
+  6. Google dork: site:target.com filetype:sql
+  7. Google dork: site:target.com filetype:env
+  8. Google dork: site:target.com filetype:yml
+  9. Google dork: site:target.com filetype:json
+  10. Google dork: site:target.com filetype:xml
+  11. Google dork: site:target.com filetype:conf
+  12. Google dork: site:target.com filetype:cfg
+  13. Google dork: site:target.com filetype:bak
+  14. Google dork: site:target.com intitle:"index of"
+  15. Google dork: site:target.com intitle:"dashboard"
+  16. Google dork: site:target.com intitle:"admin"
+  17. Google dork: site:target.com intitle:"login"
+  18. Google dork: site:target.com inurl:admin
+  19. Google dork: site:target.com inurl:login
+  20. Google dork: site:target.com inurl:dashboard
+  21. Google dork: site:target.com inurl:config
+  22. Google dork: site:target.com inurl:api
+  23. Google dork: site:target.com inurl:upload
+  24. Google dork: site:target.com inurl:debug
+  25. Google dork: site:target.com inurl:test
+  26. Google dork: site:target.com inurl:staging
+  27. Google dork: site:target.com inurl:dev
+  28. Google dork: site:target.com inurl:.git
+  29. Google dork: site:target.com inurl:.env
+  30. Google dork: site:target.com inurl:wp-admin
+  31. Google dork: site:target.com inurl:phpmyadmin
+  32. Google dork: site:target.com inurl:swagger
+  33. Google dork: site:target.com inurl:graphql
+  34. Google dork: site:target.com intext:"password"
+  35. Google dork: site:target.com intext:"api key"
+  36. Google dork: site:target.com intext:"secret"
+  37. Google dork: site:target.com intext:"token"
+  38. Google dork: site:target.com cache:
+  39. Google dork: site:target.com "error" "sql"
+  40. Google dork: site:pastebin.com target.com
+  41. Google dork: site:github.com target.com password
+  42. Google dork: site:github.com target.com api_key
+  43. Google dork: site:github.com target.com secret
+  44. Google dork: site:github.com target.com token
+  45. Google dork: site:gist.github.com target.com
+  46. Google dork: site:stackoverflow.com target.com
+  47. Google dork: site:trello.com target.com
+  48. Google dork: site:slack.com target.com
+  49. Google dork: site:notion.so target.com
+
+## Subdomain Takeover  (1)
+  1. Test for subdomain takeover via abandoned Pagoda Box app domains
+
+## WordPress Security  (2)
+  1. Test if WordPress readme.html file is accessible revealing version
+  2. Check if WordPress version is disclosed in embedded CSS/JS file queries
+
+## Login Page Security Deep  (1)
+  1. Test for login page right-to-left text handling security
+
+## File Handler Security Deep  (3)
+  1. Test for file upload with JSON for prototype pollution
+  2. Test for file upload with YAML for deserialization
+  3. Test for file upload with pickle for deserialization RCE
+
+## Email Template Security  (11)
+  1. Test for email template with malicious attachment link
+  2. Test for email template with malware download link
+  3. Test for email template with ransomware download link
+  4. Test for email template with urgency manipulation
+  5. Test for email template with authority impersonation
+  6. Test for email template with fear-based manipulation
+  7. Test for email template with curiosity-based manipulation
+  8. Test for email template with greedy-based manipulation
+  9. Test for email template with helpfulness-based manipulation
+  10. Test for email template unsubscribe link manipulation
+  11. Test for email template preference center link manipulation
+
+## Subdomain Takeover Deep  (9)
+  1. Test for subdomain takeover via CNAME pointing to Squarespace
+  2. Test for subdomain takeover via CNAME pointing to Wix
+  3. Test for subdomain takeover via CNAME pointing to Pantheon
+  4. Test for subdomain takeover via CNAME pointing to Fly.io
+  5. Test for subdomain takeover via CNAME pointing to Render
+  6. Test for subdomain takeover via CNAME pointing to Vercel
+  7. Test for subdomain takeover via CNAME pointing to Netlify
+  8. Test for subdomain takeover via cancelled Heroku app
+  9. Test for subdomain takeover via deleted GitHub repository
+
+## Microservices & API Gateway  (15)
+  1. Test for service discovery endpoint exposure (Eureka, Consul)
+  2. Test for API gateway authentication bypass
+  3. Test for internal service direct access bypassing gateway
+  4. Test for service mesh security (Istio, Linkerd)
+  5. Test for inter-service communication encryption
+  6. Test for service-to-service authentication (mTLS)
+  7. Test for API gateway rate limiting bypass
+  8. Test for API gateway request transformation exploitation
+  9. Test for backend server information disclosure via gateway errors
+  10. Test for internal service port exposure through misconfigured gateway
+  11. Test for service registry manipulation and spoofing
+  12. Test for circuit breaker security bypass
+  13. Test for health check endpoint information disclosure
+  14. Test for distributed tracing header injection (X-B3-TraceId)
+  15. Test for API gateway CORS configuration misconfiguration
+
+## GraphQL Deep Testing  (15)
+  1. Test GraphQL for field-level authorization bypass
+  2. Test GraphQL for query complexity DoS attack
+  3. Test GraphQL for alias-based rate limit bypass
+  4. Test GraphQL for batch query abuse
+  5. Test GraphQL for mutation authorization enforcement
+  6. Test GraphQL for subscription resource exhaustion
+  7. Test GraphQL for injection in custom scalar types
+  8. Test GraphQL for directive-based access control bypass
+  9. Test GraphQL for fragment spread abuse for data access
+  10. Test GraphQL for __type introspection information disclosure
+  11. Test GraphQL for query plan caching exploitation
+  12. Test GraphQL for Apollo federation security issues
+  13. Test GraphQL for relay-style connection manipulation
+  14. Test GraphQL for file upload mutation security
+  15. Test GraphQL for custom resolver vulnerability exploitation

@@ -1,0 +1,14 @@
+# deps & build artifacts
+node_modules/
+dist/
+release/
+release2/
+release3/
+*.exe
+*.blockmap
+win-unpacked*/
+
+# logs / os
+*.log
+.DS_Store
+Thumbs.db
